@@ -1,11 +1,5 @@
 # Bright Nucleus Boilerplate
 
-[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/brightnucleus/boilerplate.svg)](https://scrutinizer-ci.com/g/brightnucleus/boilerplate/?branch=master)
-[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/brightnucleus/boilerplate.svg)](https://scrutinizer-ci.com/g/brightnucleus/boilerplate/?branch=master)
-[![Build Status](https://img.shields.io/scrutinizer/build/g/brightnucleus/boilerplate.svg)](https://scrutinizer-ci.com/g/brightnucleus/boilerplate/build-status/master)
-[![Codacy Badge](https://img.shields.io/codacy/a7370932c3ce45fca747ce2aaf415b16.svg)](https://www.codacy.com/app/BrightNucleus/boilerplate)
-[![Code Climate](https://img.shields.io/codeclimate/github/brightnucleus/boilerplate.svg)](https://codeclimate.com/github/brightnucleus/boilerplate)
-
 [![Latest Stable Version](https://img.shields.io/packagist/v/brightnucleus/boilerplate.svg)](https://packagist.org/packages/brightnucleus/boilerplate)
 [![Total Downloads](https://img.shields.io/packagist/dt/brightnucleus/boilerplate.svg)](https://packagist.org/packages/brightnucleus/boilerplate)
 [![Latest Unstable Version](https://img.shields.io/packagist/vpre/brightnucleus/boilerplate.svg)](https://packagist.org/packages/brightnucleus/boilerplate)
