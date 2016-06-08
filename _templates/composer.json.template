@@ -1,0 +1,22 @@
+{
+  "name": "{{vendor}}/{{package}}",
+  "description": "{{description}}",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "{{author}}",
+      "email": "{{email}}"
+    }
+  ],
+  "require": {
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "{{VendorPC}}\\{{PackagePC}}\\": "src/"
+    }
+  }
+}

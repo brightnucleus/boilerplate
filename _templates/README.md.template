@@ -1,0 +1,48 @@
+# {{Vendor}} {{Package}}
+
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/{{vendor}}/{{package}}.svg)](https://scrutinizer-ci.com/g/{{vendor}}/{{package}}/?branch=master)
+[![Code Coverage](https://img.shields.io/scrutinizer/coverage/g/{{vendor}}/{{package}}.svg)](https://scrutinizer-ci.com/g/{{vendor}}/{{package}}/?branch=master)
+[![Build Status](https://img.shields.io/scrutinizer/build/g/{{vendor}}/{{package}}.svg)](https://scrutinizer-ci.com/g/{{vendor}}/{{package}}/build-status/master)
+[![Codacy Badge](https://img.shields.io/codacy/00000000000000000000000000000000.svg)](https://www.codacy.com/app/BrightNucleus/{{package}})
+[![Code Climate](https://img.shields.io/codeclimate/github/{{vendor}}/{{package}}.svg)](https://codeclimate.com/github/{{vendor}}/{{package}})
+
+[![Latest Stable Version](https://img.shields.io/packagist/v/{{vendor}}/{{package}}.svg)](https://packagist.org/packages/{{vendor}}/{{package}})
+[![Total Downloads](https://img.shields.io/packagist/dt/{{vendor}}/{{package}}.svg)](https://packagist.org/packages/{{vendor}}/{{package}})
+[![Latest Unstable Version](https://img.shields.io/packagist/vpre/{{vendor}}/{{package}}.svg)](https://packagist.org/packages/{{vendor}}/{{package}})
+[![License](https://img.shields.io/packagist/l/{{vendor}}/{{package}}.svg)](https://packagist.org/packages/{{vendor}}/{{package}})
+
+{{description}}
+
+## Table Of Contents
+
+* [Installation](#installation)
+* [Basic Usage](#basic-usage)
+* [Advanced Usage](#advanced-usage)
+* [Contributing](#contributing)
+* [License](#license)
+
+## Installation
+
+The best way to use this package is through Composer:
+
+```BASH
+composer require {{vendor}}/{{package}}
+```
+
+## Basic Usage
+
+> TODO
+
+## Advanced Usage
+
+> TODO
+
+## Contributing
+
+All feedback / bug reports / pull requests are welcome.
+
+## License
+
+Copyright (c) {{year}} {{author}}, {{Vendor}}
+
+This code is licensed under the [MIT License](LICENSE).

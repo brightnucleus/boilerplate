@@ -1,0 +1,35 @@
+{
+  "name": "brightnucleus/boilerplate",
+  "description": "Boilerplate package you can use to quickly create a new package from scratch.",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alain Schlesser",
+      "email": "alain.schlesser@gmail.com"
+    }
+  ],
+  "require": {
+    "brightnucleus/exceptions": ">=0.2",
+    "brightnucleus/config": ">=0.4",
+    "composer/composer": "^1.1",
+    "symfony/finder": "^3.1",
+    "mustache/mustache": "^2.10"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "BrightNucleus\\Boilerplate\\Scripts\\": "_scripts/"
+    }
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "BrightNucleus\\Boilerplate\\Scripts\\Setup::run",
+      "rm -rf _scripts",
+      "rm -rf .git",
+      "git init"
+    ]
+  }
+}

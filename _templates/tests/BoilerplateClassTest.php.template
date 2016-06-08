@@ -1,0 +1,26 @@
+<?php
+/**
+ * {{Vendor}} {{Package}}.
+ *
+ * {{description}}
+ *
+ * @package   {{VendorPC}}\{{PackagePC}}
+ * @author    {{author}} <{{email}}>
+ * @license   MIT
+ * @link      {{url}}
+ * @copyright {{year}} {{author}}, {{Vendor}}
+ */
+
+namespace {{VendorPC}}\{{PackagePC}};
+
+/**
+ * Class BoilerplateClassTest.
+ *
+ * @since  0.1.0
+ *
+ * @author {{author}} <{{email}}>
+ */
+class BoilerplateClassTest extends \PHPUnit_Framework_TestCase
+{
+    // TODO: Implement tests.
+}
