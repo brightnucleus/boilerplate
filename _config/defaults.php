@@ -21,6 +21,7 @@ $folders = [
     'config'    => SetupHelper::getFolder('_config'),
     'scripts'   => SetupHelper::getFolder('_scripts'),
     'templates' => SetupHelper::getFolder('_templates'),
+    'vendor'    => SetupHelper::getFolder('vendor'),
     'vcs'       => SetupHelper::getFolder('.git'),
 ];
 

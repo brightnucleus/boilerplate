@@ -83,6 +83,10 @@ class Setup
             RemoveTemplatesFolder::class,
             RemoveOriginalVCSData::class,
             InitializeVCS::class,
+
+            // Removing the vendor folder also removes the autoloader,
+            // so this task needs to run last.
+            RemoveVendorFolder::class,
         ];
     }
 }
