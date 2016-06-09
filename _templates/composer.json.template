@@ -11,8 +11,11 @@
     }
   ],
   "require": {
+    "brightnucleus/exceptions": ">=0.2",
+    "brightnucleus/config": ">=0.4.3"
   },
   "require-dev": {
+    "phpunit/phpunit": "~4"
   },
   "autoload": {
     "psr-4": {

@@ -1,0 +1,29 @@
+<?php
+/**
+ * {{Vendor}} {{Package}}.
+ *
+ * {{description}}
+ *
+ * @package   {{VendorPC}}\{{PackagePC}}
+ * @author    {{author}} <{{email}}>
+ * @license   MIT
+ * @link      {{url}}
+ * @copyright {{year}} {{author}}, {{Vendor}}
+ */
+
+namespace {{VendorPC}}\{{PackagePC}};
+
+/*
+ * Configuration for {{Vendor}} {{Package}}.
+ */
+$configuration = [
+];
+
+/*
+ * Return the configuration with a vendor/package prefix.
+ */
+return [
+    '{{VendorPC}}' => [
+        '{{PackagePC}}' => $configuration,
+    ],
+];

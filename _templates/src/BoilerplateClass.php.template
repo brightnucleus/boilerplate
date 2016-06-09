@@ -13,6 +13,10 @@
 
 namespace {{VendorPC}}\{{PackagePC}};
 
+use BrightNucleus\Config\ConfigInterface;
+use BrightNucleus\Config\ConfigTrait;
+use BrightNucleus\Config\Exception\FailedToProcessConfigException;
+
 /**
  * Class BoilerplateClass.
  *
@@ -22,5 +26,20 @@ namespace {{VendorPC}}\{{PackagePC}};
  */
 class BoilerplateClass
 {
-    // TODO: Implement class.
+
+    use ConfigTrait;
+
+    /**
+     * Instantiate a BoilerplateClass object.
+     *
+     * @since 0.1.0
+     *
+     * @param ConfigInterface|null $config Optional. The configuration settings to use.
+     *
+     * @throws FailedToProcessConfigException If the configuration could not be processed.
+     */
+    public function __construct(ConfigInterface $config = null)
+    {
+        $this->processConfig($config ?: $this->fetchDefaultConfig());
+    }
 }
