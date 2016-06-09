@@ -27,7 +27,7 @@
   "scripts": {
     "post-create-project-cmd": [
       "BrightNucleus\\Boilerplate\\Scripts\\Setup::run",
-      "rm -rf _scripts && composer update"
+      "rm -rf _scripts && composer update --ansi && vendor/bin/phpunit --color=always"
     ]
   }
 }

@@ -22,5 +22,17 @@ namespace {{VendorPC}}\{{PackagePC}};
  */
 class BoilerplateClassTest extends \PHPUnit_Framework_TestCase
 {
-    // TODO: Implement tests.
+
+    /**
+     * Test whether the class can be instantiated.
+     *
+     * @since 0.1.0
+     */
+    public function testClassInstantiation() {
+        $object = new BoilerplateClass();
+        $this->assertInstanceOf(
+            '{{VendorPC}}\{{PackagePC}}\BoilerplateClass',
+            $object
+        );
+    }
 }
