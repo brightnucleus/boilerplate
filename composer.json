@@ -28,7 +28,6 @@
     "post-create-project-cmd": [
       "BrightNucleus\\Boilerplate\\Scripts\\Setup::run",
       "rm -rf _scripts",
-      "rm -rf .git",
       "git init"
     ]
   }

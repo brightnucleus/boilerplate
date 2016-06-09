@@ -15,6 +15,7 @@ use BrightNucleus\Boilerplate\Scripts\Task\AskAboutProjectParameters;
 use BrightNucleus\Boilerplate\Scripts\Task\MoveTemplateFilesToRootFolder;
 use BrightNucleus\Boilerplate\Scripts\Task\RemoveConfigFolder;
 use BrightNucleus\Boilerplate\Scripts\Task\RemoveExistingRootFiles;
+use BrightNucleus\Boilerplate\Scripts\Task\RemoveOriginalVCSData;
 use BrightNucleus\Boilerplate\Scripts\Task\RemoveTemplatesFolder;
 use BrightNucleus\Boilerplate\Scripts\Task\RemoveVendorFolder;
 use BrightNucleus\Boilerplate\Scripts\Task\ReplacePlaceholdersInTemplateFiles;
@@ -79,6 +80,7 @@ class Setup
             MoveTemplateFilesToRootFolder::class,
             RemoveConfigFolder::class,
             RemoveTemplatesFolder::class,
+            RemoveOriginalVCSData::class,
         ];
     }
 }
