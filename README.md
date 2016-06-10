@@ -11,6 +11,7 @@ Boilerplate package you can use to quickly create a new package from scratch.
 
 * [Basic Usage](#basic-usage)
 * [Customizing The Generated Boilerplate](#customizing-the-generated-boilerplate)
+    * [Providing A Custom Config File](#providing-a-custom-config-file)
     * [Changing The Templates](#changing-the-templates)
     * [Changing The Placeholders](#changing-the-placeholders)
     * [Adding A Custom Setup Task](#adding-a-custom-setup-task)
