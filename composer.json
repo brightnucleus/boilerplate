@@ -24,6 +24,12 @@
       "BrightNucleus\\Boilerplate\\Scripts\\": "_scripts/"
     }
   },
+  "extra": {
+    "brightnucleus-boilerplate": {
+      "config-file": "_config/defaults.php",
+      "config-prefix": "BrightNucleus/Boilerplate"
+    }
+  },
   "scripts": {
     "post-create-project-cmd": [
       "BrightNucleus\\Boilerplate\\Scripts\\Setup::run",

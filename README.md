@@ -29,7 +29,29 @@ This will create a new folder called `<package-folder>`, clone the `brightnucleu
 
 ## Customizing The Generated Boilerplate
 
-If you want to use this package for your own purposes, you can fork it and adapt the workflow and templates with some simple tweaks.
+If you want to use this package for your own purposes, you can either fork it and adapt the workflow and templates with some simple tweaks, or you can require it through Composer to extend it.
+
+### Providing A Custom Config File
+
+You can set the configuration file to be loaded through the `"extra"` key in the `composer.json` file:
+
+```JSON
+  "extra": {
+    "brightnucleus-boilerplate": {
+      "config-file": "_config/defaults.php",
+      "config-prefix": "BrightNucleus/Boilerplate"
+    }
+  },
+```
+
+If you want to modify the key that is used for this (`"brightnucleus-boilerplate"`), you can override the `Setup::getExtraKey()` method.
+
+```PHP
+protected static function getExtraKey()
+{
+    return 'brightnucleus-boilerplate';
+}
+```
 
 ### Changing The Templates
 

@@ -22,6 +22,7 @@ use BrightNucleus\Boilerplate\Scripts\Task\RemoveVendorFolder;
 use BrightNucleus\Boilerplate\Scripts\Task\ReplacePlaceholdersInTemplateFiles;
 use BrightNucleus\Boilerplate\Scripts\Task\VerifyProjectParameters;
 use BrightNucleus\Config\ConfigFactory;
+use BrightNucleus\Config\ConfigInterface;
 use Composer\Script\Event;
 
 /**
@@ -45,8 +46,7 @@ class Setup
     public static function run(Event $event)
     {
         $event->getIO()->write('<info>Now running setup tasks...</info>');
-        $config = ConfigFactory::create(__DIR__ . '/../_config/defaults.php')
-                               ->getSubConfig('BrightNucleus\Boilerplate');
+        $config = static::getConfig($event);
         $tasks  = static::getSetupTasks($event);
         foreach ($tasks as $task) {
             /** @var SetupTask $taskStep */
@@ -60,6 +60,18 @@ class Setup
             $taskStep->complete();
         }
         $event->getIO()->write('<info>Setup tasks complete, cleaning up...</info>');
+    }
+
+    /**
+     * Get the key that is used in the `composer.json` file to pass extra information.
+     *
+     * @since 0.1.4
+     *
+     * @return string
+     */
+    protected static function getExtraKey()
+    {
+        return 'brightnucleus-boilerplate';
     }
 
     /**
@@ -88,5 +100,33 @@ class Setup
             // so this task needs to run last.
             RemoveVendorFolder::class,
         ];
+    }
+
+    /**
+     * Get the configuration file to use.
+     *
+     * @since 0.1.4
+     *
+     * @param Event $event The Composer event that is being handled.
+     *
+     * @return ConfigInterface Configuration file to use.
+     */
+    protected static function getConfig(Event $event)
+    {
+        $key   = static::getExtraKey();
+        $extra = $event->getComposer()->getPackage()->getExtra();
+
+        $configFile = isset($extra[$key])
+                      && isset($extra[$key]['config-file'])
+            ? $extra[$key]['config-file']
+            : '_config/defaults.php';
+
+        $configPrefix = isset($extra[$key])
+                        && isset($extra[$key]['config-prefix'])
+            ? $extra[$key]['config-prefix']
+            : 'BrightNucleus/Boilerplate';
+
+        return ConfigFactory::create(__DIR__ . '/../' . $configFile)
+                            ->getSubConfig($configPrefix);
     }
 }
