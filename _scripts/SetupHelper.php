@@ -113,7 +113,7 @@ class SetupHelper
             throw new RuntimeException(
                 sprintf(
                     _('Could not find a matching folder for folder name "%1$s".'),
-                    $folderName
+                    $folder
                 )
             );
         }
