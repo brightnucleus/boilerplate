@@ -53,7 +53,7 @@ class Setup
             $taskStep = new $task($config, $event);
             $event->getIO()->write(
                 sprintf(
-                    _('<info>Task %1$s</info>'),
+                    '<info>Task %1$s</info>',
                     $taskStep->getName()
                 )
             );

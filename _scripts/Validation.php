@@ -42,7 +42,7 @@ class Validation
 
         throw new InvalidArgumentException(
             sprintf(
-                _('Provided string "%1$s" was not in PascalCase.'),
+                'Provided string "%1$s" was not in PascalCase.',
                 $string
             )
         );
@@ -66,7 +66,7 @@ class Validation
 
         throw new InvalidArgumentException(
             sprintf(
-                _('Provided string "%1$s" was not in lowercase.'),
+                'Provided string "%1$s" was not in lowercase.',
                 $string
             )
         );
@@ -90,7 +90,7 @@ class Validation
 
         throw new InvalidArgumentException(
             sprintf(
-                _('Provided string "%1$s" was not trimmed.'),
+                'Provided string "%1$s" was not trimmed.',
                 $string
             )
         );
@@ -114,7 +114,7 @@ class Validation
 
         throw new InvalidArgumentException(
             sprintf(
-                _('Provided string "%1$s" was not a valid email.'),
+                'Provided string "%1$s" was not a valid email.',
                 $string
             )
         );
@@ -138,7 +138,7 @@ class Validation
 
         throw new InvalidArgumentException(
             sprintf(
-                _('Provided string "%1$s" was not a valid URL.'),
+                'Provided string "%1$s" was not a valid URL.',
                 $string
             )
         );
@@ -162,7 +162,7 @@ class Validation
 
         throw new InvalidArgumentException(
             sprintf(
-                _('Provided string "%1$s" was not a valid year or year range.'),
+                'Provided string "%1$s" was not a valid year or year range.',
                 $string
             )
         );
@@ -186,7 +186,7 @@ class Validation
 
         throw new InvalidArgumentException(
             sprintf(
-                _('Provided string "%1$s" was not a valid date.'),
+                'Provided string "%1$s" was not a valid date.',
                 $string
             )
         );

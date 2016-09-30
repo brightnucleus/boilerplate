@@ -42,7 +42,7 @@ class RemoveExistingRootFiles extends AbstractTask
             } catch (Exception $exception) {
                 $this->io->writeError(
                     sprintf(
-                        _('Could not remove file "%1$s". Reason: %2$s'),
+                        'Could not remove file "%1$s". Reason: %2$s',
                         SetupHelper::getFile($file),
                         $exception->getMessage()
                     )

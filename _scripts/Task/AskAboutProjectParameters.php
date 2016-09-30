@@ -43,7 +43,7 @@ class AskAboutProjectParameters extends AbstractTask
             try {
                 $value = $this->io->askAndValidate(
                     sprintf(
-                        _('<question>%1$s</question> [%2$s] <info>Default: "%3$s"</info> ? '),
+                        '<question>%1$s</question> [%2$s] <info>Default: "%3$s"</info> ? ',
                         $data['name'],
                         $data['description'],
                         $default

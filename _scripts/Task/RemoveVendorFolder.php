@@ -41,7 +41,7 @@ class RemoveVendorFolder extends AbstractTask
         } catch (Exception $exception) {
             $this->io->writeError(
                 sprintf(
-                    _('Could not remove vendor folder "%1$s". Reason: %2$s'),
+                    'Could not remove vendor folder "%1$s". Reason: %2$s',
                     $vendorFolder,
                     $exception->getMessage()
                 )

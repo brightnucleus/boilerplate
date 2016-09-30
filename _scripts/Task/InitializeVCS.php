@@ -46,7 +46,7 @@ class InitializeVCS extends AbstractTask
         if (0 !== $return) {
             throw new RuntimeException(
                 sprintf(
-                    _('Could not initialize the VCS in folder "%1$s". [Exit Status: %2$d]'),
+                    'Could not initialize the VCS in folder "%1$s". [Exit Status: %2$d]',
                     $folder,
                     $return
                 )

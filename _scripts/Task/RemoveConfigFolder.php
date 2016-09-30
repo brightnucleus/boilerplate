@@ -41,7 +41,7 @@ class RemoveConfigFolder extends AbstractTask
         } catch (Exception $exception) {
             $this->io->writeError(
                 sprintf(
-                    _('Could not remove config folder "%1$s". Reason: %2$s'),
+                    'Could not remove config folder "%1$s". Reason: %2$s',
                     $configFolder,
                     $exception->getMessage()
                 )

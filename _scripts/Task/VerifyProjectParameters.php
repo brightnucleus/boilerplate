@@ -35,7 +35,7 @@ class VerifyProjectParameters extends AbstractTask
         foreach ($this->getConfigKey('Placeholders') as $placeholder) {
             $this->io->write(
                 sprintf(
-                    _('%1$s: <info>%2$s</info>'),
+                    '%1$s: <info>%2$s</info>',
                     $placeholder['name'],
                     $placeholder['value']
                 )

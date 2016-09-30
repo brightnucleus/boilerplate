@@ -41,7 +41,7 @@ class RemoveOriginalVCSData extends AbstractTask
         } catch (Exception $exception) {
             $this->io->writeError(
                 sprintf(
-                    _('Could not remove VCS folder "%1$s". Reason: %2$s'),
+                    'Could not remove VCS folder "%1$s". Reason: %2$s',
                     $templatesFolder,
                     $exception->getMessage()
                 )

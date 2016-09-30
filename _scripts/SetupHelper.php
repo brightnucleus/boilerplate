@@ -112,7 +112,7 @@ class SetupHelper
         if (! is_dir($folder)) {
             throw new RuntimeException(
                 sprintf(
-                    _('Could not find a matching folder for folder name "%1$s".'),
+                    'Could not find a matching folder for folder name "%1$s".',
                     $folder
                 )
             );
@@ -139,7 +139,7 @@ class SetupHelper
         if (! file_exists($file)) {
             throw new RuntimeException(
                 sprintf(
-                    _('Could not find a matching file for file name "%1$s".'),
+                    'Could not find a matching file for file name "%1$s".',
                     $fileName
                 )
             );
