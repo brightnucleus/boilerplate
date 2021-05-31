@@ -13,7 +13,7 @@
   "require": {
     "brightnucleus/exceptions": ">=0.2",
     "brightnucleus/config": ">=0.4",
-    "composer/composer": "^1.1",
+    "composer/composer": "^1.1 || ^2",
     "symfony/finder": "^3.1",
     "mustache/mustache": "^2.10"
   },
